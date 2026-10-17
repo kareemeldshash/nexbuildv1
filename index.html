@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>NexBuild — Engineering Project Marketplace</title>
+<meta name="description" content="Build it. Publish it. Get paid for it. Practical engineering projects from makers and founders.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="shell">
+  <aside class="rail rail-left" aria-label="Left advertisement">
+    <div class="ad-side" id="ad-left">Ad slot — paste your ad code here</div>
+  </aside>
+  <div class="wrap">
+    <header>
+      <a class="logo" href="#/" aria-label="NexBuild home">
+        <svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true">
+          <rect x="2" y="16" width="12" height="12" rx="2" fill="#2447f5"/>
+          <rect x="16" y="16" width="12" height="12" rx="2" fill="#ffc400" stroke="#14213d" stroke-width="1.5"/>
+          <rect x="9" y="2" width="12" height="12" rx="2" fill="none" stroke="currentColor" stroke-width="2.5"/>
+        </svg>
+        NexBuild
+      </a>
+      <nav id="nav"></nav>
+    </header>
+    <main id="app"></main>
+    <footer>
+      <a href="#/policies">Terms, refunds and policies</a>
+      <span class="sep">·</span>
+      <button type="button" class="linkish" id="theme-toggle" aria-label="Toggle dark mode">Dark mode</button>
+    </footer>
+  </div>
+  <aside class="rail rail-right" aria-label="Right advertisement">
+    <div class="ad-side" id="ad-right">Ad slot — paste your ad code here</div>
+  </aside>
+</div>
+<div id="toast" role="status"></div>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.45.4/dist/umd/supabase.min.js"></script>
+<script src="config.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
